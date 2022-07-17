@@ -22,29 +22,35 @@ function disconnect() {
 </script>
 
 <template>
-  <div v-if="userSession.isUserSignedIn()">
-    <button @click="disconnect">Disconnect Wallet</button>
-    <p class="font-bold">
-      mainnet: {{ userSession.loadUserData().profile.stxAddress.mainnet }}
-    </p>
-    <p>testnet: {{ userSession.loadUserData().profile.stxAddress.testnet }}</p>
+  <div v-if="userSession.isUserSignedIn()" class="flex items-center space-x-4">
+    <button
+      @click="disconnect"
+      class="rounded hover:bg-green-500 duration-300 mono p-2 bg-blue-500 text-sm uppercase text-white"
+    >
+      Disconnect Wallet
+    </button>
+    <div class="flex items-center space-x-2">
+      <p>mainnet:</p>
+      <p class="rounded w-40 overflow-hidden p-2 mono bg-slate-900 text-white">
+        {{ userSession.loadUserData().profile.stxAddress.mainnet }}
+      </p>
+    </div>
+
+    <!-- <div class="flex items-center space-x-2">
+      <p>testnet:</p>
+      <p class="rounded w-40 overflow-hidden p-2 mono bg-slate-900 text-white">
+        {{ userSession.loadUserData().profile.stxAddress.testnet }}
+      </p>
+    </div> -->
   </div>
   <div v-else>
-    <button @click="authenticate">Connect Wallet</button>
+    <button
+      @click="authenticate"
+      class="mono text-white p-2 px-4 bg-blue-500 rounded w-full hover:scale-95 hover:bg-green-500 duration-300"
+    >
+      Connect Hiro Wallet
+    </button>
   </div>
 </template>
 
-<style scoped>
-div {
-  margin-top: 8px;
-}
-
-button {
-  margin: 8px;
-  background-color: #222;
-  border: 2px solid #777;
-  border-radius: 28px;
-  font-size: 18px;
-  padding: 16px 24px;
-}
-</style>
+<style scoped></style>

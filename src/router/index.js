@@ -15,6 +15,36 @@ const router = createRouter({
       name: "about",
       component: () => import("../views/AboutView.vue"),
     },
+    {
+      path: "/pipelines",
+      name: "pipelines",
+      component: () => import("../views/PipelinesView.vue"),
+    },
+    {
+      path: "/tracks",
+      name: "tracks",
+      component: () => import("../views/TracksView.vue"),
+    },
+    {
+      path: "/tracks/:slug",
+      name: "TrackPage",
+      component: () => import("../components/songbooks/TrackPage.vue"),
+    },
+    {
+      path: "/privacy",
+      name: "privacy",
+      component: () => import("../views/PrivacyView.vue"),
+    },
+    {
+      path: "/terms",
+      name: "terms",
+      component: () => import("../views/TermsView.vue"),
+    },
+    {
+      path: "/create-track",
+      name: "CreateTrack",
+      component: () => import("../views/CreateTrackView.vue"),
+    },
   ],
 });
 
