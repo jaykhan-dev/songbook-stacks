@@ -22,7 +22,7 @@
               />
               <div class="flex justify-between p-2 items-center">
                 <p
-                  class="uppercase font-bold text-gray-500 my-2"
+                  class="uppercase font-bold my-2"
                   v-for="category in article.category"
                   :key="category.id"
                 >

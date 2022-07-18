@@ -91,7 +91,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
     <div class="mt-20">
       <h2 class="text-4xl font-bold my-8">Roadmap</h2>
       <!-- PART1 -->
-      <div class="grid lg:grid-cols-3 gap-8" v-motion-fade :delay="1000">
+      <div class="grid lg:grid-cols-3 gap-4" v-motion-fade :delay="1000">
         <!-- COL -->
         <div
           class="border p-4 rounded dark:bg-blue-800 dark:border-none border-black"
@@ -102,14 +102,15 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
           </div>
 
           <p class="text-xl">
-            The initial step to setting up Sound Money is to create some content
-            and add affiliate links
+            Web app with wallet integration, user interface and basic features
           </p>
           <ul class="p-8">
-            <li>Setup frontend with Vue Js &#10004;</li>
-            <li>Setup backend with Wagtail &#10004;</li>
-            <li>Setup blog &#10004;</li>
-            <li>Setup Store &#10004;</li>
+            <li>Frontend with Vue Js &#10004;</li>
+            <li>Backend with Django/Wagtail &#10004;</li>
+            <li>Hiro Wallet login&#10004;</li>
+            <li>Responsive</li>
+            <li>Mint NFTs</li>
+            <li>CRUD</li>
           </ul>
         </div>
         <!-- COL -->
@@ -118,16 +119,15 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
         >
           <div class="flex space-x-2 items-center">
             <button class="text-3xl rounded bg-black text-white p-2">2</button>
-            <h2 class="text-4xl my-4">Campaign</h2>
+            <h2 class="text-4xl my-4">Pipelines</h2>
           </div>
-          <p class="text-xl">
-            Promote the first iteration of Sound Money to bring in revenue
-          </p>
+          <p class="text-xl">Drag-and-drop functionality for processes</p>
           <ul class="p-8">
-            <li>Social media</li>
-            <li>Add content</li>
-            <li>Marketing</li>
-            <li>Expand network of writers</li>
+            <li>Mixing</li>
+            <li>Mastering</li>
+            <li>Quality Assurance</li>
+            <li>DAO</li>
+            <li>Data analysis</li>
           </ul>
         </div>
         <!-- COL -->
@@ -136,33 +136,18 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
         >
           <div class="flex space-x-2 items-center">
             <button class="text-3xl rounded bg-black text-white p-2">3</button>
-            <h2 class="text-4xl my-4">Lightning</h2>
+            <h2 class="text-4xl my-4">Mobile App</h2>
           </div>
           <p class="text-xl">
-            Integrate the Lightning Network in order to faciliate transactions,
-            wallets and accounts.
+            Native mobile app that can run on Android and iPhone
           </p>
           <ul class="p-8">
-            <li>Lightning wallets sign-in</li>
-            <li>Lightning apps</li>
+            <li>Setup</li>
+            <li>Add features</li>
+            <li>Test</li>
           </ul>
         </div>
         <!-- COL -->
-        <div
-          class="border p-4 rounded dark:bg-blue-800 dark:border-none border-black"
-        >
-          <div class="flex space-x-2 items-center">
-            <button class="text-3xl rounded bg-black text-white p-2">4</button>
-            <h2 class="text-4xl my-4">Earn</h2>
-          </div>
-          <p class="text-xl">
-            A great incentive to learn is to get paid to do so.
-          </p>
-          <ul class="p-8">
-            <li>Satoshi payouts</li>
-            <li>Write articles and get paid</li>
-          </ul>
-        </div>
       </div>
     </div>
 

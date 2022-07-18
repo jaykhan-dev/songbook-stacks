@@ -141,7 +141,7 @@ p {
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+  border-radius: 0px;
   background: black;
 }
 
@@ -154,5 +154,9 @@ p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(3, 206, 88);
+}
+
+ul {
+  list-style-type: circle;
 }
 </style>

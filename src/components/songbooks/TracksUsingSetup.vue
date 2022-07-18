@@ -1,6 +1,8 @@
 <template>
   <LoadingScreen class="" v-if="store.loading == true" />
-  <div class="my-12 flex justify-between">
+
+  <div class="lg:flex justify-between items-center mt-8">
+    <h1 class="lg:text-8xl font-bold serif">Tracks</h1>
     <div class="flex items-center space-x-4">
       <input
         type="text"
@@ -13,8 +15,8 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </div>
-    <div></div>
   </div>
+
   <TabsWrapper>
     <TabsEach title="Discover">
       <div class="flex justify-center" aria-label="all tracks section">
@@ -24,7 +26,7 @@
             <div
               v-for="item in songs.items"
               :key="item.id"
-              class="dark:hover:bg-slate-900 hover:bg-slate-300 duration-300 rounded"
+              class="hover:bg-slate-900 duration-300 rounded"
             >
               <router-link :to="/tracks/ + item.meta.slug" class="">
                 <div
@@ -32,7 +34,7 @@
                 >
                   <div class="flex space-x-4 items-center">
                     <i
-                      class="fa-solid fa-star opacity-50 hover:text-yellow-500 hover:opacity-100"
+                      class="fa-solid fa-star opacity-50 hover:opacity-100"
                     ></i>
                     <img
                       v-if="item.song_image_thumbnail"
