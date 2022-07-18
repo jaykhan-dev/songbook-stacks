@@ -1,6 +1,6 @@
 <template>
   <LoadingScreen class="" v-if="store.loading == true" />
-  <div class="p-8 flex justify-between">
+  <div class="my-12 flex justify-between">
     <div class="flex items-center space-x-4">
       <input
         type="text"
@@ -82,9 +82,6 @@
           </button>
         </router-link>
       </div>
-    </TabsEach>
-    <TabsEach title="Favourites">
-      <h1>Tracks</h1>
     </TabsEach>
   </TabsWrapper>
 </template>

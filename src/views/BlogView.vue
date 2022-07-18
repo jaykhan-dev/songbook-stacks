@@ -5,7 +5,7 @@ import BlogAPI from "../components/blog/BlogAPI.vue";
 
 <template>
   <div class="h-screen dark:bg-blue-900 dark:text-white dark:duration-300">
-    <div class="flex justify-between items-center mt-8 p-8">
+    <div class="flex justify-between items-center mt-8">
       <div class="flex items-center space-x-4">
         <router-link to="/">
           <p class="bg-gray-900 px-4 p-2 rounded text-white">Home</p>

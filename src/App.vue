@@ -27,6 +27,7 @@ const isDark = ref(false);
                 class=""
               />
               <h1 class="text-4xl my-4 serif font-extrabold">SongBook</h1>
+              <p class="mono uppercase text-sm">Prototype</p>
             </div>
             <div class="mt-20 flex flex-col space-y-8 text-2xl">
               <router-link to="/">
@@ -97,6 +98,10 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Space Mono', monospace;
 */
 
+a:hover {
+  color: limegreen;
+}
+
 body,
 html {
   display: block;
@@ -104,10 +109,11 @@ html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  cursor: crosshair;
 }
 
 .activeClass {
-  color: cornflowerblue;
+  color: limegreen;
   font-weight: 600;
 }
 

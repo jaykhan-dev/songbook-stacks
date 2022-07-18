@@ -43,7 +43,7 @@
                   <p
                     v-for="tag in article.tags"
                     :key="tag.id"
-                    class="border p-1 rounded hover:bg-black hover:text-white duration-300 px-4 my-1"
+                    class="border p-1 text-sm rounded hover:bg-black hover:text-white duration-300 px-2 my-1 mono"
                   >
                     {{ tag }}
                   </p>

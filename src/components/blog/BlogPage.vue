@@ -2,7 +2,7 @@
   <div v-if="loading">
     <LoadingScreen />
   </div>
-  <div class="flex justify-between items-center mt-8 p-8">
+  <div class="flex justify-between items-center mt-8">
     <div class="flex items-center space-x-4">
       <router-link to="/">
         <p class="bg-gray-900 text-white px-4 p-2 rounded">Home</p>
@@ -25,12 +25,12 @@
         </button> -->
     </div>
   </div>
-  <div class="p-4 flex justify-center">
+  <div class="my-8 flex justify-center">
     <div class="">
       <article class="items-stretch">
         <div class="">
-          <div v-motion-slide-left :delay="700">
-            <h1 class="lg:text-6xl text-4xl font-extrabold my-4">
+          <div v-motion-slide-right :delay="700">
+            <h1 class="lg:text-6xl text-4xl font-extrabold my-4 serif">
               {{ item.title }}
             </h1>
             <div
@@ -51,7 +51,7 @@
               <p
                 v-for="tag in item.tags"
                 :key="tag.id"
-                class="p-1 border my-1 rounded hover:bg-black hover:text-white duration-300 px-4"
+                class="p-1 border my-1 rounded hover:bg-black hover:text-white duration-300 px-2 text-sm mono"
               >
                 {{ tag }}
               </p>

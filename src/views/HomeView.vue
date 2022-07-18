@@ -4,7 +4,7 @@ import StacksWalletConnect from "../components/StacksConnectWallet.vue";
 
 <template>
   <main class="h-screen">
-    <div class="flex justify-between items-center mt-8 p-8">
+    <div class="flex justify-between items-center mt-8">
       <div class="flex items-center space-x-4">
         <router-link to="/">
           <p class="bg-gray-900 px-4 p-2 rounded">Home</p>
@@ -22,7 +22,7 @@ import StacksWalletConnect from "../components/StacksConnectWallet.vue";
         </button> -->
       </div>
     </div>
-    <div class="grid grid-cols-2 border-b dark:border-blue-600 p-8">
+    <div class="grid grid-cols-2 border-b dark:border-blue-600 py-12">
       <!-- COL -->
       <div class="">
         <h1 class="text-8xl font-bold my-4 serif">Hello</h1>
@@ -32,7 +32,7 @@ import StacksWalletConnect from "../components/StacksConnectWallet.vue";
       <div class="grid grid-cols-2 gap-4">
         <!-- COL -->
         <div
-          class="dark:bg-blue-800 bg-gray-200 grid place-items-center dark:text-white rounded-xl"
+          class="dark:bg-blue-800 border dark:border-none border-black grid place-items-center dark:text-white rounded-xl"
         >
           <div>
             <p>Total asset value</p>
@@ -41,7 +41,7 @@ import StacksWalletConnect from "../components/StacksConnectWallet.vue";
         </div>
         <!-- COL -->
         <div
-          class="dark:bg-blue-800 bg-gray-200 grid place-items-center dark:text-white rounded-xl"
+          class="dark:bg-blue-800 border dark:border-none border-black grid place-items-center dark:text-white rounded-xl"
         >
           <div>
             <p>Total claimable rewards</p>
