@@ -31,6 +31,16 @@ const router = createRouter({
       component: () => import("../components/songbooks/TrackPage.vue"),
     },
     {
+      path: "/blog",
+      name: "blog",
+      component: () => import("../views/BlogView.vue"),
+    },
+    {
+      path: "/blog/:slug",
+      name: "BlogPage",
+      component: () => import("../components/blog/BlogPage.vue"),
+    },
+    {
       path: "/privacy",
       name: "privacy",
       component: () => import("../views/PrivacyView.vue"),

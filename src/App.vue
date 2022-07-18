@@ -48,6 +48,9 @@ const isDark = ref(false);
               <router-link to="/about">
                 <p>About</p>
               </router-link>
+              <router-link to="/blog">
+                <p>Blog</p>
+              </router-link>
               <router-link to="/privacy">
                 <p>Privacy</p>
               </router-link>
@@ -69,7 +72,9 @@ const isDark = ref(false);
                 type="button"
                 class="border-2 border-black dark:border-white rounded-full hover:bg-green-500 p-2 mx-2"
               >
-                <i class="fa-brands fa-github p-1"></i>
+                <a href="https://github.com/jaykhan-dev/songbook-stacks.git">
+                  <i class="fa-brands fa-github p-1"></i>
+                </a>
               </button>
             </div>
           </div>

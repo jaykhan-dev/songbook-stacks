@@ -27,6 +27,23 @@ import StacksWalletConnect from "../components/StacksConnectWallet.vue";
     <h2 class="my-8 text-4xl font-bold lg:w-2/3">
       <span class="serif font-bold">Songbook</span> is a web3 app for music NFTs
     </h2>
+    <div class="grid lg:grid-cols-2 gap-4 my-8">
+      <p>
+        The Bitcoin blockchain is by far the most secure, robust and well known
+        of all the blockchains currently running. It uses the Proof-of-Work
+        protocol which means that actual energy is being used to create new
+        bitcoins. It is safe to say that Bitcoin is energy.
+      </p>
+      <p>
+        Music NFTs are changing the music industry for the better. The artist is
+        now in full control of their music, royalties and merchandise. NFTs are
+        programmable which means that there are many ways a song can earn
+        Bitcoin or regular cash.
+      </p>
+    </div>
+    <div class="my-8">
+      <h2 class="text-4xl font-bold">Hiro Wallet</h2>
+    </div>
     <div class="grid lg:grid-cols-2 gap-4 mt-20">
       <!-- COL -->
       <div

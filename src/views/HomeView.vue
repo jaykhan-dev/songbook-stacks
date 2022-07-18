@@ -13,7 +13,7 @@ import StacksWalletConnect from "../components/StacksConnectWallet.vue";
       </div>
       <div class="flex items-center space-x-4">
         <StacksWalletConnect />
-        <i class="fa-solid fa-copy dark:text-white text-black"></i>
+        <!-- <i class="fa-solid fa-copy dark:text-white text-black"></i> -->
 
         <!-- <button
           class="p-1 rounded-full bg-gray-900 text-white hover:bg-green-500"
