@@ -25,51 +25,40 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
     </div>
     <h1 class="lg:text-8xl font-bold mt-8 serif">Privacy Policy</h1>
     <p class="text-2xl my-8">
-      Your privacy is very important to us. Accordingly, we have developed this
-      Policy in order for you to understand how we collect, use, communicate and
-      disclose and make use of personal information. The following outlines our
-      privacy policy.
+      Part of what makes web3 different from web2 is how data is gathered. With
+      blockchain technology, the ledger is public knowledge which makes it
+      easier to audit. More importantly, with web3 logins (i.e wallets), there
+      is no need to collect and store personal data indefinitely.
     </p>
     <ul class="p-4 space-y-4">
       <li>
-        Before or at the time of collecting personal information, we will
-        identify the purposes for which information is being collected.
+        The only data that is collected will be cookies for UX purposes and data
+        analysis
       </li>
       <li>
-        We will collect and use of personal information solely with the
-        objective of fulfilling those purposes specified by us and for other
-        compatible purposes, unless we obtain the consent of the individual
-        concerned or as required by law.
+        The Hiro wallet does not collect names, birthdays, or other identifying
+        information
       </li>
       <li>
-        We will only retain personal information as long as necessary for the
-        fulfillment of those purposes.
+        Security is a major concern, which is why Bitcoin and Stacks was chosen
+        as the blockchain platforms
+      </li>
+      <li>No personal identitying data is stored on the servers</li>
+      <li>
+        Personal data should be in total control of the user, and if he/she/they
+        wish to share that information while interacting with other users, that
+        is their choice
       </li>
       <li>
-        We will collect personal information by lawful and fair means and, where
-        appropriate, with the knowledge or consent of the individual concerned.
+        Copyrights are automatically assigned to the creator of the NFT. If
+        there are violations in the form of plagiarism, it is upto the offender
+        to deal with consequences such as lawsuits.
       </li>
       <li>
-        Personal data should be relevant to the purposes for which it is to be
-        used, and, to the extent necessary for those purposes, should be
-        accurate, complete, and up-to-date.
-      </li>
-      <li>
-        We will protect personal information by reasonable security safeguards
-        against loss or theft, as well as unauthorized access, disclosure,
-        copying, use or modification.
-      </li>
-      <li>
-        We will make readily available to customers information about our
-        policies and practices relating to the management of personal
-        information.
+        This document is subject to change and will be updated without notice.
       </li>
     </ul>
   </div>
 </template>
 
-<style>
-ul {
-  list-style-type: circle;
-}
-</style>
+<style></style>

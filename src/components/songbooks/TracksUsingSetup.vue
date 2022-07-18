@@ -75,7 +75,7 @@
       </div>
     </TabsEach>
     <TabsEach title="My tracks">
-      <div class="flex justify-end w-full mt-8">
+      <div class="flex justify-end w-full mt-8 h-screen">
         <router-link to="/create-track">
           <button
             class="mono p-2 px-4 bg-green-500 text-white rounded shadow hover:scale-95 duration-300 font-bold"
