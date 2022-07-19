@@ -10,8 +10,8 @@
         programmability and utility to their songs.
       </p>
       <p class="text-xl">
-        Without centralized authorities, creators are free to create the art
-        they way they want. This opens up endless possibilities.
+        Without centralized authorities, creators are free to create the art the
+        way they want. This opens up endless possibilities.
       </p>
     </div>
 
