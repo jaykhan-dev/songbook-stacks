@@ -108,8 +108,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
             <li>Frontend with Vue Js &#10004;</li>
             <li>Backend with Django/Wagtail &#10004;</li>
             <li>Hiro Wallet login&#10004;</li>
-            <li>Profile Page</li>
-            <li>Responsive</li>
+            <li>Responsive &#10004;</li>
             <li>Mint NFTs</li>
             <li>CRUD</li>
           </ul>

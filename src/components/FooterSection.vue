@@ -12,9 +12,7 @@
       </div>
 
       <p class="text-2xl my-4">Music platform</p>
-      <p class="my-4">
-        Manage your digital assets and gain sovereignty as an artist
-      </p>
+      <p class="my-4">DAP - Digital Audio Platform</p>
       <p class="my-2">Copyright. 2022.</p>
     </div>
 

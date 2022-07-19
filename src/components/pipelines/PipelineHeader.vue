@@ -20,7 +20,7 @@
         </button> -->
       </div>
     </div>
-    <h1 class="lg:text-8xl font-bold serif mt-8">Pipelines</h1>
+    <h1 class="lg:text-8xl text-6xl font-bold serif mt-8">Pipelines</h1>
     <p class="mono text-sm uppercase my-8">Coming Soon!</p>
   </div>
 </template>

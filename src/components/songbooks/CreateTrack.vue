@@ -44,19 +44,19 @@
           <input
             type="text"
             placeholder="Title"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
           <input
             type="text"
             name=""
             id=""
             placeholder="Artist"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
           <input
             type="text"
             placeholder="Album"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
         </div>
         <!-- COL -->
@@ -64,17 +64,17 @@
           <input
             type="text"
             placeholder="Website"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
           <input
             type="text"
             placeholder="Song Key"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
           <input
             type="text"
             placeholder="BPM"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
         </div>
       </div>
@@ -83,7 +83,7 @@
       <textarea
         type="text"
         placeholder="description"
-        class="border dark:border-gray-500 border-black/50 p-2 rounded-xl h-64"
+        class="border dark:border-gray-300 border-black/50 p-2 rounded-xl h-64 dark:bg-blue-900"
       />
       <!-- TAGS -->
       <!-- CATEGORY -->
@@ -95,7 +95,7 @@
           <input
             type="text"
             placeholder="NFT id"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
         </div>
         <!-- COL -->
@@ -103,7 +103,7 @@
           <input
             type="text"
             placeholder="Date"
-            class="border dark:border-gray-500 border-black/50 p-2 rounded-xl"
+            class="border dark:border-gray-300 border-black/50 p-2 rounded-xl dark:bg-blue-900"
           />
         </div>
       </div>

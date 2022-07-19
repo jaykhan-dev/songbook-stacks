@@ -5,7 +5,7 @@
   >
     <!-- COL -->
     <div class="">
-      <h1 class="lg:text-8xl text-6xl font-bold serif">
+      <h1 class="lg:text-7xl text-6xl font-bold serif">
         Music NFTs on the Bitcoin blockchain
       </h1>
       <p class="lg:text-xl my-12">
