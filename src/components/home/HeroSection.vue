@@ -1,14 +1,14 @@
 <template>
   <div
-    class="rounded p-8 grid lg:grid-cols-2 gap-4 py-12 mt-8 text-white bg-fixed shadow-xl"
+    class="rounded p-8 grid lg:grid-cols-2 gap-4 py-12 mt-8 text-white shadow-xl lg:bg-fixed"
     id="hero-section"
   >
     <!-- COL -->
     <div class="">
-      <h1 class="lg:text-7xl font-bold serif">
+      <h1 class="lg:text-8xl text-6xl font-bold serif">
         Music NFTs on the Bitcoin blockchain
       </h1>
-      <p class="text-xl my-12">
+      <p class="lg:text-xl my-12">
         The new paradigm of decentralized apps are bring self soveriegnty to
         arists and creators. This application is for those who want to take
         control of their art and find like minded individuals and groups.
@@ -48,7 +48,7 @@
 <style>
 #hero-section {
   background-image: url("../../assets/abstract1.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -1,13 +1,13 @@
 <template>
   <div class="lg:flex justify-between items-center mt-8">
     <h1 class="lg:text-8xl font-bold serif">Tracks</h1>
-    <div class="flex items-center space-x-4">
+    <div class="flex items-center space-x-4 border p-2 rounded">
       <input
         type="text"
         name=""
         id=""
         placeholder="search"
-        class="dark:bg-blue-900 border border-gray-500 dark:border-white p-2 rounded"
+        class="dark:bg-blue-900 p-2"
       />
       <button>
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -18,7 +18,7 @@
   <TabsWrapper>
     <TabsEach title="Discover">
       <LoadingScreen class="" v-if="store.loading == true" />
-      <div class="flex justify-center" aria-label="all tracks section">
+      <div class="lg:flex justify-center" aria-label="all tracks section">
         <div class="p-4 my-8 w-full">
           <!-- TRACKS -->
           <div class="space-y-4 w-full" v-motion-fade :delay="500">
@@ -31,32 +31,30 @@
                 <div
                   class="lg:flex items-center justify-between lg:space-x-4 p-2"
                 >
-                  <div class="flex space-x-4 items-center">
+                  <div class="lg:flex lg:space-x-4 items-center">
                     <i
                       class="fa-solid fa-star opacity-50 hover:opacity-100"
                     ></i>
                     <img
                       v-if="item.song_image_thumbnail"
                       :src="item.song_image_thumbnail.url"
-                      width="75"
-                      height="75"
-                      class="rounded"
+                      class="rounded song-image"
                     />
                     <!-- SONG INFO -->
-                    <div>
-                      <h1 class="font-bold">
+                    <div class="lg:flex-col sm:flex space-y-2">
+                      <h1 class="font-bold lg:text-xl text-4xl my-2">
                         {{ item.title }}
                       </h1>
-                      <div class="flex space-x-4">
+                      <div class="lg:flex lg:space-x-4">
                         <p>{{ item.artist_name }}</p>
                         <p>{{ item.album }}</p>
-                        <p
+                        <button
                           v-for="category in item.categories"
                           :key="category.id"
                           class="bg-blue-600 border border-blue-500 font-mono px-1 text-white uppercase"
                         >
                           {{ category.name }}
-                        </p>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -76,7 +74,7 @@
     <TabsEach title="My tracks">
       <div class="flex w-full mt-8" v-if="userSession.isUserSignedIn()">
         <div class="flex justify-between w-full h-screen">
-          <p>No Tracks!</p>
+          <p class="mono">No Tracks!</p>
           <router-link to="/tracks/create-track">
             <button
               class="mono p-2 px-4 bg-green-500 text-white rounded shadow hover:scale-95 duration-300 font-bold"
@@ -86,7 +84,7 @@
           </router-link>
         </div>
       </div>
-      <div class="h-screen" v-else>Connect your wallet to mint an NFT</div>
+      <div class="h-screen mono" v-else>Connect your wallet to mint an NFT</div>
     </TabsEach>
   </TabsWrapper>
 </template>
@@ -108,3 +106,17 @@ onMounted(() => {
   store.fetchSongs();
 });
 </script>
+
+<style>
+@media screen and (min-width: 480px) {
+  .song-image {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .song-image {
+    width: 400px;
+  }
+}
+</style>

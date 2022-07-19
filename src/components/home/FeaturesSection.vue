@@ -1,6 +1,6 @@
 <template>
-  <div class="my-20">
-    <h2 class="lg:text-6xl font-bold my-4">
+  <div class="my-20 p-2">
+    <h2 class="lg:text-6xl text-4xl font-bold my-4">
       Blockchain is disrupting the music industry!
     </h2>
     <div class="grid lg:grid-cols-2 gap-4 my-12">

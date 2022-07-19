@@ -5,7 +5,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
 </script>
 
 <template>
-  <div class="flex justify-between items-center mt-8">
+  <div class="lg:flex justify-between items-center mt-8 space-y-2">
     <div class="flex items-center space-x-4">
       <router-link to="/">
         <p class="bg-gray-900 px-4 p-2 rounded text-white">Home</p>

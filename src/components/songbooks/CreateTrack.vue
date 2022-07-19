@@ -27,7 +27,7 @@
         </button> -->
       </div>
     </div>
-    <h1 class="lg:text-8xl font-bold my-8 serif">Mint NFT</h1>
+    <h1 class="lg:text-8xl text-6xl font-bold my-8 serif">Mint NFT</h1>
     <form action="" class="flex flex-col space-y-4 my-8">
       <div class="my-8">
         <label class="text-2xl font-bold">Upload File</label>

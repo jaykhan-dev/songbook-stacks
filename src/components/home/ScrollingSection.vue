@@ -1,31 +1,31 @@
 <template>
-  <section class="overflow-hidden truncate ...">
+  <div class="overflow-hidden truncate ...">
     <h1
-      class="py-8 text-gray-800 text-opacity-80 uppercase text-8xl font-bold"
+      class="py-8 text-gray-800 text-opacity-80 uppercase text-8xl font-bold dark:text-white"
       id="features-heading"
     >
       Features - Tune in - Turn on - Make some noize - Disrupt the status quo -
       Reimagine the future
     </h1>
-  </section>
-  <section class="overflow-hidden truncate ...">
+  </div>
+  <div class="overflow-hidden truncate ...">
     <h1
-      class="uppercase text-8xl text-gray-800 text-opacity-80 font-bold"
+      class="uppercase text-8xl text-gray-800 text-opacity-80 font-bold dark:text-white"
       id="ecosystem-heading"
     >
       Ecosystem - DAPPS - Community - DAO - DeFi - Decentralized - Borderless
       Economy -
     </h1>
-  </section>
-  <section class="overflow-hidden truncate ...">
+  </div>
+  <div class="overflow-hidden truncate ...">
     <h1
-      class="my-4 uppercase text-gray-800 text-opacity-80 text-8xl font-bold"
+      class="my-4 uppercase text-gray-800 text-opacity-80 text-8xl font-bold dark:text-white"
       id="creators-heading"
     >
       Creators - Developers - Songwriters - Musicians - Producers - Sound
       engineers - Managers -
     </h1>
-  </section>
+  </div>
 </template>
 
 <script setup>

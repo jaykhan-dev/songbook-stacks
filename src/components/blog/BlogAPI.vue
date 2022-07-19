@@ -3,7 +3,7 @@
     <LoadingScreen />
   </div>
   <section class="flex justify-center">
-    <div class="p-2">
+    <div class="">
       <h1 class="lg:text-6xl text-4xl font-bold my-8 serif">Blog</h1>
 
       <div class="grid lg:grid-cols-3 gap-4 my-20">

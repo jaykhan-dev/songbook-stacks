@@ -3,7 +3,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
 </script>
 <template>
   <div class="">
-    <div class="flex justify-between items-center mt-8">
+    <div class="lg:flex justify-between items-center mt-8 space-y-2">
       <div class="flex items-center space-x-4">
         <router-link to="/">
           <p class="bg-gray-900 px-4 p-2 rounded text-white">Home</p>
@@ -23,7 +23,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
         </button> -->
       </div>
     </div>
-    <h1 class="lg:text-8xl mt-8 serif font-bold">About</h1>
+    <h1 class="lg:text-8xl text-6xl mt-8 serif font-bold">About</h1>
     <h2 class="my-8 text-4xl font-bold lg:w-2/3">
       <span class="serif font-bold">Songbook</span> is a web3 app for music NFTs
     </h2>
@@ -46,7 +46,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
         class="p-8 dark:bg-blue-800 border border-black/40 dark:border-none rounded"
       >
         <i class="fa-brands fa-bitcoin text-8xl"></i>
-        <h1 class="lg:text-4xl font-bold my-4">Bitcoin</h1>
+        <h1 class="text-4xl font-bold my-4">Bitcoin</h1>
         <p class="">
           The Bitcoin blockchain is by far the most secure, robust and well
           known of all the blockchains currently running.
@@ -65,7 +65,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
         class="p-8 dark:bg-blue-800 border border-black/40 dark:border-none rounded"
       >
         <img src="../assets/stacks-logo.svg" alt="Sound Co Logo" class="" />
-        <h1 class="lg:text-4xl font-bold my-4">Stacks</h1>
+        <h1 class="text-4xl font-bold my-4">Stacks</h1>
         <p class="">
           SongBook App uses the Stacks platform for building web3 apps to use
           the Bitcoin Blockchain
@@ -75,14 +75,14 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
             <button
               class="text-green-500 text-2xl font-bold hover:translate-x-4 duration-300 my-4"
             >
-              Stacks.co ->
+              Stacks.co
             </button>
           </a>
           <a href="">
             <button
               class="text-green-500 text-2xl font-bold hover:translate-x-4 duration-300 my-4"
             >
-              Hiro Wallet ->
+              Hiro Wallet
             </button>
           </a>
         </div>
@@ -160,16 +160,16 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
           class="p-8 dark:bg-blue-800 border border-black/40 dark:border-none rounded"
         >
           <img src="../assets/jk-logo.png" alt="Jay Khan Logo" class="" />
-          <h1 class="lg:text-4xl font-bold my-4">Jay Khan</h1>
+          <h1 class="text-4xl font-bold my-4">Jay Khan</h1>
           <p class="">
             Khan is a designer, developer, blockchain enthusiast and musician.
           </p>
-          <div class="flex items-center justify-between">
+          <div class="lg:flex items-center justify-between">
             <a href="https://jkhan.live">
               <button
                 class="text-green-500 text-2xl font-bold hover:translate-x-4 duration-300 my-4"
               >
-                Portfolio ->
+                Portfolio
               </button>
             </a>
             <div class="flex items-center space-x-2">
