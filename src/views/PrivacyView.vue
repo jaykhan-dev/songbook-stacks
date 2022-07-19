@@ -61,4 +61,8 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
   </div>
 </template>
 
-<style></style>
+<style>
+ul {
+  list-style-type: circle;
+}
+</style>

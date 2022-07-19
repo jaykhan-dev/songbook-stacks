@@ -25,7 +25,7 @@ function disconnect() {
   <div v-if="userSession.isUserSignedIn()" class="flex items-center space-x-4">
     <button
       @click="disconnect"
-      class="rounded hover:bg-green-500 duration-300 mono p-2 bg-blue-500 text-sm uppercase text-white"
+      class="rounded hover:bg-green-500 duration-300 mono p-2 bg-blue-500 text-sm uppercase text-white hover:scale-95"
     >
       Disconnect Wallet
     </button>

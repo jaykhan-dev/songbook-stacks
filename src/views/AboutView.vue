@@ -91,7 +91,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
     <div class="mt-20">
       <h2 class="text-4xl font-bold my-8">Roadmap</h2>
       <!-- PART1 -->
-      <div class="grid lg:grid-cols-3 gap-4" v-motion-fade :delay="1000">
+      <div class="grid lg:grid-cols-3 gap-4">
         <!-- COL -->
         <div
           class="border p-4 rounded dark:bg-blue-800 dark:border-none border-black"
@@ -108,6 +108,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
             <li>Frontend with Vue Js &#10004;</li>
             <li>Backend with Django/Wagtail &#10004;</li>
             <li>Hiro Wallet login&#10004;</li>
+            <li>Profile Page</li>
             <li>Responsive</li>
             <li>Mint NFTs</li>
             <li>CRUD</li>
@@ -182,4 +183,8 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
   </div>
 </template>
 
-<style></style>
+<style>
+ul {
+  list-style-type: circle;
+}
+</style>

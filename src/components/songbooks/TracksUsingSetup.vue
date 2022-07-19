@@ -1,6 +1,4 @@
 <template>
-  <LoadingScreen class="" v-if="store.loading == true" />
-
   <div class="lg:flex justify-between items-center mt-8">
     <h1 class="lg:text-8xl font-bold serif">Tracks</h1>
     <div class="flex items-center space-x-4">
@@ -19,6 +17,7 @@
 
   <TabsWrapper>
     <TabsEach title="Discover">
+      <LoadingScreen class="" v-if="store.loading == true" />
       <div class="flex justify-center" aria-label="all tracks section">
         <div class="p-4 my-8 w-full">
           <!-- TRACKS -->
@@ -75,15 +74,19 @@
       </div>
     </TabsEach>
     <TabsEach title="My tracks">
-      <div class="flex justify-end w-full mt-8 h-screen">
-        <router-link to="/create-track">
-          <button
-            class="mono p-2 px-4 bg-green-500 text-white rounded shadow hover:scale-95 duration-300 font-bold"
-          >
-            + Add new track
-          </button>
-        </router-link>
+      <div class="flex w-full mt-8" v-if="userSession.isUserSignedIn()">
+        <div class="flex items-center justify-between w-full">
+          <p>No Tracks!</p>
+          <router-link to="/tracks/create-track">
+            <button
+              class="mono p-2 px-4 bg-green-500 text-white rounded shadow hover:scale-95 duration-300 font-bold"
+            >
+              + Mint NFT
+            </button>
+          </router-link>
+        </div>
       </div>
+      <div v-else>Connect your wallet to mint an NFT</div>
     </TabsEach>
   </TabsWrapper>
 </template>
@@ -94,6 +97,7 @@ import { onMounted, computed } from "vue";
 import { SongsStore } from "../../stores/SongsStore";
 import TabsWrapper from "../../components/TabsWrapper.vue";
 import TabsEach from "../../components/TabsEach.vue";
+import { userSession } from "../../stacksUserSession";
 
 const store = SongsStore();
 const songs = computed(() => {

@@ -51,7 +51,7 @@ const router = createRouter({
       component: () => import("../views/TermsView.vue"),
     },
     {
-      path: "/create-track",
+      path: "/tracks/create-track",
       name: "CreateTrack",
       component: () => import("../views/CreateTrackView.vue"),
     },

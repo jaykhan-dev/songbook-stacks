@@ -1,8 +1,34 @@
 <template>
-  <div class="dark:bg-blue-900 dark:text-white p-4 py-20">
-    <div></div>
-    <h1 class="text-6xl font-bold my-8">Create NFT track</h1>
-    <form action="" class="flex flex-col space-y-4">
+  <div class="">
+    <div class="flex justify-between items-center mt-8">
+      <div class="flex items-center space-x-4">
+        <router-link to="/">
+          <p class="bg-gray-900 px-4 p-2 rounded text-white">Home</p>
+        </router-link>
+
+        <p class="text-xl font-bold">/</p>
+
+        <router-link to="/tracks">
+          <p class="bg-gray-900 px-4 p-2 rounded text-white">Tracks</p>
+        </router-link>
+
+        <p class="text-xl font-bold">/</p>
+
+        <p class="p-2 rounded dark:text-white text-xl">Mint NFT</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <StacksConnectWallet />
+        <!-- <i class="fa-solid fa-copy dark:text-white text-black"></i> -->
+
+        <!-- <button
+          class="p-1 rounded-full bg-gray-900 text-white hover:bg-green-500"
+        >
+          <i class="fa-solid fa-pencil p-2"></i>
+        </button> -->
+      </div>
+    </div>
+    <h1 class="lg:text-8xl font-bold my-8 serif">Mint NFT</h1>
+    <form action="" class="flex flex-col space-y-4 my-8">
       <div class="my-8">
         <label class="text-2xl font-bold">Upload File</label>
         <input

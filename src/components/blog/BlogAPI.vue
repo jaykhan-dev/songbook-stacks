@@ -8,7 +8,9 @@
 
       <div class="grid lg:grid-cols-3 gap-4 my-20">
         <div v-for="article in articles.items" :key="article.id">
-          <div class="">
+          <div
+            class="border border-black p-2 rounded dark:border-none dark:bg-blue-800"
+          >
             <router-link
               :to="/blog/ + article.meta.slug"
               class="hover:bg-blue-500 duration-300"
