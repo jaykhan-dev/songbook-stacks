@@ -34,17 +34,37 @@ onMounted(() => {
         </div>
 
         <div class="flex items-center text-center">
-          <h1 class="lg:text-4xl text-center w-full">{{ artist.title }}</h1>
+          <h1 class="lg:text-4xl text-center w-full my-4">
+            {{ artist.title }}
+          </h1>
         </div>
         <div class="flex justify-center space-x-4 my-4 text-2xl">
-          <router-link to="">
+          <!-- <router-link v-if="" to="/tracks">
             <i class="fa-solid fa-music opacity-50"></i>
-          </router-link>
-          <a :href="artist.website" target="_blank" rel="noopener noreferrer">
+          </router-link> -->
+          <a
+            v-if="artist.website"
+            :href="artist.website"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-solid fa-globe"></i>
           </a>
-          <a :href="artist.twitter" target="_blank" rel="noopener noreferrer">
+          <a
+            v-if="artist.twitter"
+            :href="artist.twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            v-if="artist.other_link"
+            :href="artist.other_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
         <!-- <p class="my-4">{{ artist.blurb }}</p> -->
