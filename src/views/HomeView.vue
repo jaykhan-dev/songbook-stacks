@@ -7,6 +7,7 @@ import ArtistsSection from "../components/home/ArtistsSection.vue";
 import TrendingSection from "../components/home/TrendingSection.vue";
 import UpcomingSection from "../components/home/UpcomingSection.vue";
 import FeaturesSection from "../components/home/FeaturesSection.vue";
+import ScrollingSection from "../components/home/ScrollingSection.vue";
 
 import { userSession } from "../stacksUserSession";
 
@@ -17,6 +18,7 @@ import { onMounted } from "vue";
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
+  window.scrollTo(0, 0);
   //IMAGE
   gsap.set("#rock-on", { scale: 0.8 });
   gsap.to("#rock-on", {
@@ -88,7 +90,7 @@ onMounted(() => {
       <!-- COMPONENTS -->
       <HeroSection />
       <ArtistsSection />
-
+      <ScrollingSection />
       <div class="grid place-items-center p-8 rounded">
         <img
           src="../assets/music-equipment-gray.svg"
@@ -103,6 +105,7 @@ onMounted(() => {
           width="500"
         />
       </div>
+
       <FeaturesSection />
 
       <TrendingSection />
@@ -123,7 +126,7 @@ onMounted(() => {
 
           <p class="text-2xl">Music platform</p>
           <p class="">Manage your assets and become sovereign</p>
-          <p>Copyright. 2022.</p>
+          <p class="my-2">Copyright. 2022.</p>
         </div>
 
         <img

@@ -10,7 +10,7 @@
       loop
       autoplay
       style="width: 300px; height: 300px"
-      class=""
+      class="dark:mix-blend-multiply"
     ></lottie-player>
   </div>
 </template>

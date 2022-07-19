@@ -75,7 +75,7 @@
     </TabsEach>
     <TabsEach title="My tracks">
       <div class="flex w-full mt-8" v-if="userSession.isUserSignedIn()">
-        <div class="flex items-center justify-between w-full">
+        <div class="flex justify-between w-full h-screen">
           <p>No Tracks!</p>
           <router-link to="/tracks/create-track">
             <button
@@ -86,7 +86,7 @@
           </router-link>
         </div>
       </div>
-      <div v-else>Connect your wallet to mint an NFT</div>
+      <div class="h-screen" v-else>Connect your wallet to mint an NFT</div>
     </TabsEach>
   </TabsWrapper>
 </template>
