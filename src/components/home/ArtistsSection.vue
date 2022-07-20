@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
   <LoadingScreen v-if="store.loading == true" />
-  <div class="my-20 p-2">
+  <div class="my-20 p-4">
     <h2 class="lg:text-6xl text-4xl font-bold my-8">Featured Artists</h2>
     <div class="grid lg:grid-cols-3 gap-4">
       <div

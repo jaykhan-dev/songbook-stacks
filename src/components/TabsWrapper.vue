@@ -1,7 +1,7 @@
 <template>
   <div class="tabs">
     <div
-      class="tabs__header flex my-2 items-center lg:overflow-x-auto overflow-x-scroll p-4 border-b dark:border-gray-500"
+      class="tabs__header flex my-2 items-center lg:overflow-x-auto overflow-x-scroll p-2 border-b dark:border-gray-500"
     >
       <div
         v-for="title in tabTitles"

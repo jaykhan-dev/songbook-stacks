@@ -27,7 +27,7 @@ function disconnect() {
       @click="disconnect"
       class="rounded hover:bg-green-500 duration-300 mono p-2 bg-blue-500 text-sm uppercase text-white hover:scale-95"
     >
-      Disconnect Wallet
+      Disconnect
     </button>
     <div class="flex items-center space-x-2">
       <p>mainnet:</p>

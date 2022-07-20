@@ -1,7 +1,7 @@
 <template>
   <div class="lg:flex justify-between items-center mt-8">
-    <h1 class="lg:text-8xl font-bold serif">Tracks</h1>
-    <div class="flex items-center space-x-4 border p-2 rounded">
+    <h1 class="lg:text-8xl text-6xl font-bold serif lg:my-0 my-4">Tracks</h1>
+    <div class="flex items-center space-x-4 border p-2 rounded justify-between">
       <input
         type="text"
         name=""
@@ -19,7 +19,7 @@
     <TabsEach title="Discover">
       <LoadingScreen class="" v-if="store.loading == true" />
       <div class="lg:flex justify-center" aria-label="all tracks section">
-        <div class="p-4 my-8 w-full">
+        <div class="p-2 my-8 w-full">
           <!-- TRACKS -->
           <div class="space-y-4 w-full" v-motion-fade :delay="500">
             <div
@@ -32,9 +32,6 @@
                   class="lg:flex items-center justify-between lg:space-x-4 p-2"
                 >
                   <div class="lg:flex lg:space-x-4 items-center">
-                    <i
-                      class="fa-solid fa-star opacity-50 hover:opacity-100"
-                    ></i>
                     <img
                       v-if="item.song_image_thumbnail"
                       :src="item.song_image_thumbnail.url"
@@ -42,12 +39,10 @@
                     />
                     <!-- SONG INFO -->
                     <div class="lg:flex-col sm:flex space-y-2">
-                      <h1 class="font-bold lg:text-xl text-4xl my-2">
-                        {{ item.title }}
-                      </h1>
-                      <div class="lg:flex lg:space-x-4">
-                        <p>{{ item.artist_name }}</p>
-                        <p>{{ item.album }}</p>
+                      <div class="flex space-x-2 items-center">
+                        <h1 class="font-bold lg:text-xl text-2xl lg:my-0 my-2">
+                          {{ item.title }}
+                        </h1>
                         <button
                           v-for="category in item.categories"
                           :key="category.id"
@@ -56,12 +51,19 @@
                           {{ category.name }}
                         </button>
                       </div>
+                      <div class="lg:flex lg:space-x-4">
+                        <p>{{ item.artist_name }}</p>
+                        <p>{{ item.album }}</p>
+                      </div>
                     </div>
                   </div>
 
-                  <div>
+                  <div class="flex space-x-2 items-center">
+                    <i
+                      class="fa-solid fa-star opacity-50 hover:opacity-100"
+                    ></i>
                     <p class="text-xl">
-                      BTC 0.00 <i class="fa-solid fa-location-arrow"></i>
+                      <i class="fa-solid fa-location-arrow"></i>
                     </p>
                   </div>
                 </div>

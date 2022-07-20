@@ -1,6 +1,6 @@
 <template>
-  <section class="h-screen">
-    <div class="flex justify-between items-center mt-8 p-8">
+  <div class="lg:h-screen">
+    <div class="lg:flex justify-between items-center mt-8 p-2 space-y-2">
       <div class="flex items-center space-x-4">
         <router-link to="/">
           <p class="bg-gray-900 text-white px-4 p-2 rounded">Home</p>
@@ -9,8 +9,8 @@
         <router-link to="/tracks">
           <p class="bg-gray-900 text-white px-4 p-2 rounded">Tracks</p>
         </router-link>
-        <p class="text-xl font-bold">/</p>
-        <p class="text-xl">{{ item.title }}</p>
+        <!-- <p class="text-xl font-bold">/</p>
+        <p class="text-xl">{{ item.title }}</p> -->
       </div>
       <div class="flex space-x-4">
         <StacksConnectWallet />
@@ -23,27 +23,27 @@
         </button> -->
       </div>
     </div>
-    <div class="grid lg:grid-cols-2 gap-4 mt-8">
+    <div class="grid lg:grid-cols-2 gap-4 mt-8 p-2">
       <!-- COL -->
       <div
         class="dark:bg-blue-800 rounded border dark:border-none border-black p-4"
       >
-        <div class="flex space-x-2 items-center">
+        <div class="lg:flex space-x-2 items-center">
           <img
             v-if="item.song_image_thumbnail"
             :src="item.song_image_thumbnail.url"
             width="75"
             height=""
-            class="rounded"
+            class="rounded song-image"
           />
           <h1 class="text-4xl">{{ item.title }}</h1>
-          <p
+          <button
             v-for="category in item.categories"
             :key="category.id"
             class="p-1 font-mono text-sm rounded px-2 bg-green-500"
           >
             {{ category.name }}
-          </p>
+          </button>
         </div>
         <div class="flex space-x-4 items-center">
           <p>{{ item.date }}</p>
@@ -87,7 +87,7 @@
         </div>
         <div>
           <p class="font-bold my-2">Writers</p>
-          <p v-html="item.writers" class=""></p>
+          <p v-html="item.writers" class="flex-wrap"></p>
         </div>
       </div>
       <!-- COL -->
@@ -128,7 +128,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <div class="p-2">
       <TabsWrapper class="">
         <TabsEach title="Data" class="p-4 active">
           <h1>Song Data</h1>
@@ -138,7 +138,7 @@
         </TabsEach>
       </TabsWrapper>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -199,5 +199,17 @@ export default {
 <style>
 .active:active {
   color: blueviolet;
+}
+
+@media screen and (min-width: 480px) {
+  .song-image {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .song-image {
+    width: 400px;
+  }
 }
 </style>

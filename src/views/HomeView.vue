@@ -13,7 +13,7 @@ import { userSession } from "../stacksUserSession";
 </script>
 
 <template>
-  <main class="">
+  <main class="p-2">
     <div class="lg:flex justify-between items-center mt-8 space-y-2 p-2">
       <div class="flex items-center space-x-4">
         <router-link to="/">
@@ -73,13 +73,13 @@ import { userSession } from "../stacksUserSession";
           src="../assets/music-equipment-gray.svg"
           alt=""
           class="block dark:hidden"
-          width="400"
+          width="350"
         />
         <img
           src="../assets/music-equipment.svg"
           alt=""
           class="hidden dark:block"
-          width="400"
+          width="350"
         />
       </div>
 
