@@ -11,8 +11,8 @@
         <h1 class="lg:text-6xl text-4xl font-bold serif lg:my-8">SongBook</h1>
       </div>
 
-      <p class="text-2xl my-4">Music platform</p>
-      <p class="my-4">DAP - Digital Audio Platform</p>
+      <p class="text-2xl my-4">Bitcoin Music NFTs</p>
+      <p class="my-4">Become self sovereign</p>
       <p class="my-2">Copyright. 2022.</p>
     </div>
 

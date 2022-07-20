@@ -55,7 +55,7 @@ import StacksConnectWallet from "../components/StacksConnectWallet.vue";
           <button
             class="text-green-500 text-2xl font-bold hover:translate-x-4 duration-300 my-4"
           >
-            Bitcoin.org ->
+            Bitcoin.org
           </button>
         </a>
       </div>
