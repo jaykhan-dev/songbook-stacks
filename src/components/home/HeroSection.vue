@@ -21,13 +21,13 @@
             See Tracks
           </button>
         </router-link>
-        <router-link to="/tracks/create-track">
+        <!-- <router-link to="/tracks/create-track">
           <button
             class="p-2 rounded bg-blue-800 mono hover:scale-95 duration-300 px-4"
           >
             Mint Track
           </button>
-        </router-link>
+        </router-link> -->
       </div>
     </div>
     <!-- COL -->

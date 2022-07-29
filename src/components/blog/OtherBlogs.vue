@@ -3,7 +3,7 @@
     <LoadingScreen />
   </div>
 
-  <div class="space-y-7">
+  <div class="space-y-6">
     <!-- FEATURED -->
     <div v-for="article in articles.items" :key="article.id" class="">
       <div
