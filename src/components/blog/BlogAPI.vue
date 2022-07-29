@@ -1,13 +1,15 @@
 <template>
-  <div v-if="store.loading == true">
-    <LoadingScreen />
-  </div>
   <section class="flex justify-center">
-    <div class="">
-      <h1 class="lg:text-6xl text-4xl font-bold my-8 serif">Blog</h1>
+    <div class="w-full">
+      <h1 class="lg:text-8xl text-4xl font-bold my-8 serif">Blog</h1>
 
       <div class="grid lg:grid-cols-3 gap-4 my-20">
-        <div v-for="article in articles.items" :key="article.id">
+        <!-- FEATURED -->
+        <div
+          v-for="article in articles.items"
+          :key="article.id"
+          class="lg:col-span-2"
+        >
           <div
             class="border border-black p-2 rounded dark:border-none dark:bg-blue-800"
           >
@@ -15,29 +17,47 @@
               :to="/blog/ + article.meta.slug"
               class="hover:bg-blue-500 duration-300"
             >
-              <img
-                v-if="article.blog_thumbnail_api"
-                :src="article.blog_thumbnail_api.url"
-                :width="article.blog_thumbnail_api.width"
-                :height="article.blog_thumbnail_api.height"
-                class="hover:scale-95 duration-300 rounded"
-              />
-              <div class="flex justify-between p-2 items-center">
-                <p
+              <div class="flex justify-between items-center">
+                <div
+                  class="my-2 font-bold text-xl lg:flex lg:space-x-4 items-center justify-between"
+                >
+                  <div
+                    class="flex space-x-2 items-center"
+                    v-for="author in article.author_api"
+                    :key="author.id"
+                  >
+                    <img
+                      v-if="author.author_image_api"
+                      :src="author.author_image_api.url"
+                      alt="Blog Author image"
+                      class="border rounded-full"
+                      width="30"
+                    />
+                    <p>{{ author.author_name }}</p>
+                  </div>
+                </div>
+                <!-- <p
                   class="uppercase font-bold my-2"
                   v-for="category in article.category"
                   :key="category.id"
                 >
                   {{ category.name }}
-                </p>
+                </p> -->
                 <p class="">
                   {{ article.date }}
                 </p>
               </div>
+              <img
+                v-if="article.blog_thumbnail_api"
+                :src="article.blog_thumbnail_api.url"
+                width="850"
+                height=""
+                class="duration-300 rounded hover:rounded-2xl"
+              />
 
               <div class="">
                 <h2
-                  class="text-3xl font-bold hover:underline underline-offset-4"
+                  class="text-3xl font-bold hover:underline underline-offset-4 my-4"
                 >
                   {{ article.title }}
                 </h2>
@@ -50,27 +70,13 @@
                     {{ tag }}
                   </p>
                 </div>
-                <div
-                  class="text-gray-400 my-2 font-bold text-xl lg:flex lg:space-x-4 items-center justify-between"
-                >
-                  <div
-                    class="flex space-x-2 items-center"
-                    v-for="author in article.author_api"
-                    :key="author.id"
-                  >
-                    <img
-                      v-if="author.author_image_api"
-                      :src="author.author_image_api.url"
-                      alt="Blog Author image"
-                      class="border rounded-full"
-                      width="50"
-                    />
-                    <p>{{ author.author_name }}</p>
-                  </div>
-                </div>
               </div>
             </router-link>
           </div>
+        </div>
+        <!-- SIDE  -->
+        <div>
+          <OtherBlogs />
         </div>
       </div>
       <!-- <div
@@ -88,6 +94,7 @@
 import LoadingScreen from "../../components/LoadingScreen.vue";
 import { onMounted, computed } from "vue";
 import { BlogStore } from "../../stores/BlogStore";
+import OtherBlogs from "./OtherBlogs.vue";
 
 const store = BlogStore();
 

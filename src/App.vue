@@ -30,7 +30,7 @@ export default {
       class="flex justify-center dark:bg-blue-900 dark:text-white dark:duration-300"
     >
       <nav
-        class="py-2 mx-auto md:flex md:justify-between md:items-center lg:w-2/3 fixed top-0 w-full dark:bg-blue-900 bg-white z-50 p-2"
+        class="py-4 border-b border-white/20 mx-auto md:flex md:justify-between md:items-center lg:w-2/3 fixed top-0 w-full dark:bg-blue-900 bg-white z-50 p-2"
       >
         <div class="flex items-center justify-between space-x-4">
           <router-link
@@ -67,7 +67,7 @@ export default {
         <!-- MOBILE OPEN -->
         <div
           :class="showMenu ? 'flex' : 'hidden'"
-          class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
+          class="flex-col justify-center text-center mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0"
           @click="showMenu == !showMenu"
         >
           <router-link to="/tracks">
@@ -82,13 +82,7 @@ export default {
           <router-link to="/blog">
             <p>Blog</p>
           </router-link>
-          <router-link to="/privacy">
-            <p>Privacy</p>
-          </router-link>
-          <router-link to="/terms">
-            <p>Terms</p>
-          </router-link>
-          <div class="flex">
+          <div class="flex justify-center">
             <button
               type="button"
               @click="isDark = !isDark"
